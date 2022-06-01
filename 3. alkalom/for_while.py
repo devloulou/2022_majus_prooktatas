@@ -111,5 +111,27 @@ for key, value in my_dict.items():
 print("#######################################")
 #############################################################
 
-for i in range(1, 1000, 20):
-    print("Okos vagyok")
+# for i in range(1, 1000, 20):
+#     print("Okos vagyok")
+
+
+my_list = [1, 2, 3]
+
+my_range = range(3)
+
+print(my_range)
+print(my_list)
+
+print(type(my_range))
+
+print(len(my_list))
+print(len(my_range))
+
+print(my_list[0])
+print(my_range[0])
+
+
+# comprehension
+#feladatok gyakorlása
+
+# elkezdjük a függvényeket megismerni
