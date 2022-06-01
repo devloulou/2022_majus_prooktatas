@@ -339,3 +339,8 @@ print(set(my_list))
 # comprehension műveletek
 
 # függvények
+
+my_list = []
+
+
+print(help(my_list))
