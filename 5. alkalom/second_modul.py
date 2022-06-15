@@ -1,5 +1,5 @@
 #from first_modul import *
-#import first_modul
+import first_modul
 from first_modul import a, my_func
 
 import sys

@@ -32,6 +32,7 @@ my_gen = (item for item in range(10))
 print(sys.getsizeof(my_list))
 print(sys.getsizeof(my_gen))
 
+exit()
 for item in my_gen:
     print(item)
 
