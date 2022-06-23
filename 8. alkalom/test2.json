@@ -1,0 +1,34 @@
+{
+    "cars": [
+        {
+            "color": "white",
+            "motor_type": "benzin"
+        },
+        {
+            "color": "white",
+            "motor_type": "benzin",
+            "type": {
+                "sedan": {
+                    "price": {
+                        "loan": 12345677,
+                        "cash": 12346246
+                    }
+                },
+                "combi": null
+            }
+        },
+        {
+            "color": "white",
+            "motor_type": "benzin",
+            "price": {
+                "loan": 123450000,
+                "cash": 123456756
+            }
+        },
+        {
+            "color": "white",
+            "motor_type": "benzin",
+            "manufacture_date": "1990"
+        }
+    ]
+}
