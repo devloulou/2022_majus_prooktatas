@@ -33,6 +33,12 @@
 # Osztály átlag pontszáma 72.79
 # Osztály eredménye 3
 
+kriszta = { "tanulo":"Kriszta",
+         "beadando" : [70, 60, 30, 10],
+         "vizsga" : [70, 75],
+         "labor" : [68.20, 77.20]
+       }
+
 
 karcsi = { "tanulo":"Horváth Károly",
          "beadando" : [80, 50, 40, 20],
@@ -68,3 +74,48 @@ tomi = { "tanulo" : "Kiss Tamás",
         "labor" : [50, 40.6]
       }
 
+
+def get_grade(point):
+    if point >= 90:
+        return 5
+    elif 90 > point and point >= 80:
+        return 4
+    elif 80 > point and point >= 70:
+        return 3
+    elif 70 > point and point >= 60:
+        return 2
+    else:
+        return 1
+
+def get_score(student):
+    beadando = (sum(student['beadando'])/len(student['beadando']))*0.1 
+    vizsga = (sum(student['vizsga'])/len(student['vizsga']))*0.7 
+    labor = (sum(student['labor'])/len(student['labor']))*0.2
+
+    return beadando + vizsga + labor
+
+def my_func(student, key, percent):
+    return (sum(student[key])/len(student[key]))*percent
+
+
+def main():
+    class_points = 0
+    students = (karcsi, denes, emese, tomi, jani)
+    for item in students:
+        point = get_score(item)
+        grade = get_grade(point)
+
+        class_points += point
+
+        print(f"{item['tanulo']}, pontszám: {point}, érdemjegy: {grade}")
+        print('--------------------------------------------------------')
+
+    class_points /= len(students)
+
+    class_grade = get_grade(class_points)
+
+    print(f"osztály pontszáma: {class_points}, érdemjegy: {class_grade}")
+
+
+if __name__ == '__main__':
+    main()
