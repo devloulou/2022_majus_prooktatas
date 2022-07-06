@@ -94,6 +94,13 @@ def get_score(student):
 
     return beadando + vizsga + labor
 
+def get_score2(student):
+    beadando = my_func(student, 'beadando', 0.1)
+    beadando = my_func(student, 'vizsga', 0.7)
+    beadando = my_func(student, 'labor', 0.2)
+
+    return beadando + vizsga + labor
+
 def my_func(student, key, percent):
     return (sum(student[key])/len(student[key]))*percent
 
