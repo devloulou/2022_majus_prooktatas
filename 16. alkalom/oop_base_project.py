@@ -69,6 +69,7 @@ if __name__ == '__main__':
     volvo = Car(name='Volvo S40', price=1_300_000)
     simson = MotorBike(name='Simson', price=50_000)
 
+
     catalogue = Catalogue()
     salon = Salon(catalogue)
 

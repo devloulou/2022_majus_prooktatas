@@ -1,25 +1,55 @@
-my_list = [1, 2, 3, 4, 5, 6, 7]
+"""
+Feladat:
 
-print(my_list[2::2])
+HR adatbázis fejlesztése:
 
+A most alapított cégünknek szüksége van egy HR adatbázisra, ahol a dolgozók adatai
+szerepelnek: pozíció, fizetés, személyes adatok.
 
+Feladat:
+tervezzetek adatmodellt a következő problémára:
 
-def my_func(a, b):
-    """
-    This function powered double the a value then add
-    to b, because this need to 
-    """
-    a *= 2
-    return a + b
+1. a cégnél következő pozíciókban dolgoznak emberek:
+    - vezető fejlesztő
+    - fejlesztő
+    - gyakornok
+    - CEO
+    - hr business partner
 
-#clean_code változat
-def double_a(a):
-    return a*2
+2. a dolgozókról a következő információkat tároljuk le:
+    - mikor kezdett a cégnél
+    - mennyi a fizetése
+    - milyen munkakörben dolgozik
 
-def my_func(a, b):
-    return double_a(a) + b
+3. a pozíciókkal kapcsolatos információk:
+    - minimum és maximum fizetési sáv megadása
 
+Pythonban fejlesszetek egy olyan megoldást, hogy be lehessen léptetni dolgozót,
+illetve ha felmond, akkor ki lehessen törölni dolgozót.
 
-if __name__ == '__main__':
-    sol = my_func(2, 3)
-    print(sol)
+Segítség: adatbázisból sosem törlünk adatot.
+Ha törölni kell valamit, akkor más megközelítést használunk, pl. használunk olyan mezőt, hogy aktív, aminek igen vagy nem az értéke
+Erre figyeljetek oda.
+
+Minden teszt adatot magatoknak kell megírnotok.
+Nem kell túlkomplikálni a fejlesztést, nem kell 10 táblás adatmodell, de nem is 1 táblára van szükség.
+Erre is figyeljetek.
+A fizetési sávokat is ti határozzátok meg - nem kell a valóságnak megfelelő adat - 
+A létrehozott dolgozóknál figyeljetek arra, hogy a pozíciónál megadott sávot ne sértse meg a fizetése.
+
+Ha betöltöttetek adatokat - minden pozícióhoz legalább 1 embert - 
+akkor írjatok olyan lekérdezést, amely visszadja, hogy ki keres a legtöbbet és ki keres a legkevesebbet.
+Itt SQL scriptet szeretnék kapni tőletek.
+
+A feladat akkor számít megoldásnak, ha
+1. létrejön egy adatmodell
+2. teszt adatok betöltésre kerülnek
+3. pythonban lesz rá megoldás, hogy feltölthessek új dolgozót és törölhessek meglévő embereket
+4. elkészítitek az sql-t
+
+Határidő: szerda 12:00
+
+A feladat bonyolultnak tűnik, és az is lesz, ha túlgondoljátok.
+Ha kérdésetek van, keressetek.
+
+"""
