@@ -1,0 +1,8 @@
+key:
+  val1:
+  - alma
+  - "k\xF6rte"
+  val2: null
+  val3:
+    val4:
+    - null
